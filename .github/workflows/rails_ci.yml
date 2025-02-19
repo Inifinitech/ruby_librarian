@@ -14,8 +14,8 @@ jobs:
       postgres:
         image: postgres:13
         env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: password
+          POSTGRES_USER: infinitech
+          POSTGRES_PASSWORD: 12345
           POSTGRES_DB: ruby_librarian_test
         ports:
           - 5432:5432
