@@ -5,7 +5,7 @@ A simple **book lending system** built with **Ruby on Rails 8**, allowing users 
 
 * * * * *
 
-** Features**
+**Features**
 ---------------
 
 1. **Manage Books** - Create, View, Update, Delete books.\
@@ -17,7 +17,9 @@ A simple **book lending system** built with **Ruby on Rails 8**, allowing users 
 
 * * * * *
 
-**🛠 Setup & Installation**
+![Image](https://github.com/user-attachments/assets/ec037eb4-3904-49dd-a8b3-c81111e0cdce)
+
+**Setup & Installation**
 ---------------------------
 
 ### **1. Prerequisites**
@@ -33,14 +35,12 @@ Ensure you have the following installed:
 ### **2. Clone the Repository**
 
 
-CopyEdit
 
 `git clone https://github.com/YOUR_GITHUB_USERNAME/ruby_librarian.git
 cd ruby_librarian`
 
 ### **3. Install Dependencies**
 
-CopyEdit
 
 `bundle install`
 
@@ -50,11 +50,12 @@ CopyEdit
 2.  **Create and migrate the database:**
 
 
-CopyEdit
 
 `rails db:create db:migrate`
 
 * * * * *
+
+![Image](https://github.com/user-attachments/assets/6cc06c90-cdc2-4e4b-88bd-e6739e4c3ba9)
 
 **API Routes**
 --------------
@@ -75,12 +76,11 @@ The following routes are available in the application:
 | **GET** | `/borrowers/:name` | `borrowings#history` | View borrower's history |
 
 
-** Running the Application**
+**Running the Application**
 ------------------------------
 
 ### **Start the Rails Server**
 
-CopyEdit
 
 `rails server`
 
@@ -89,7 +89,6 @@ Access the app at **`http://localhost:3000`**
 ### **Run the Rails Console**
 
 
-CopyEdit
 
 `rails console`
 
@@ -101,14 +100,12 @@ CopyEdit
 1. **Run RSpec tests:**
 
 
-CopyEdit
 
 `bundle exec rspec`
 
 2. **Run Rubocop (Linting):**
 
 
-CopyEdit
 
 `bundle exec rubocop`
 
@@ -119,21 +116,18 @@ CopyEdit
 
 ### **1. Database Issues?**
 
-CopyEdit
 
 `rails db:reset db:migrate db:seed`
 
 ### **2. Bundle Install Errors?**
 
 
-CopyEdit
 
 `bundle update`
 
 ### **3. Missing Tests?**
 
 
-CopyEdit
 
 `rails generate rspec:install`
 
@@ -155,22 +149,3 @@ CopyEdit
 This project is licensed under the **MIT License**.
 
 * * * * *
-
-### **Final Steps**
-
-1. **Create a `README.md` file in your project root:**
-
-
-CopyEdit
-
-`touch README.md`
-
-2. **Paste the above content.**\
-3. **Commit & Push the README to GitHub:**
-
-
-CopyEdit
-
-`git add README.md
-git commit -m "Add README with setup"
-git push origin main`
