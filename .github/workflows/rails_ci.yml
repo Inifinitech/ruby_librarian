@@ -50,7 +50,7 @@ jobs:
           RAILS_ENV: test
 
       - name: Run Linter (Rubocop)
-        run: bundle exec rubocop
+        run: bundle exec rubocop --parallel --format progress
 
       - name: Run Tests
         run: bundle exec rspec
