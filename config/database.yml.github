@@ -1,8 +1,15 @@
-test:
+default: &default
   adapter: postgresql
   encoding: unicode
-  database: ruby_librarian_test
-  username: infinitech
-  password: 12345
-  host: localhost
   pool: 5
+  username: <%= ENV['POSTGRES_USER'] || 'infinitech' %>
+  password: <%= ENV['POSTGRES_PASSWORD'] || '12345' %>
+  host: localhost
+
+development:
+  <<: *default
+  database: ruby_librarian_development
+
+test:
+  <<: *default
+  database: ruby_librarian_test
